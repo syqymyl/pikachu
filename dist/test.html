@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>测试</title>
+  </head>
+  <body>
+    <div id="demo1"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+      <button id="btnPause">暂停</button>
+      <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button>
+      <button id="btnNormal">中速</button>
+      <button id="btnFast">快速</button>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      #buttons {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+      #buttons > button {
+        margin-bottom: 10px;
+        padding: 4px 8px;
+      }
+      #demo2 {
+        display: none;
+      }
+      #demo1 {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        /* overflow: hidden; 可以隐藏滚动条，但用户无法滚动 */
+        overflow-y: auto;
+      }
+      #demo1::-webkit-scrollbar {
+        display: none;
+      }
+      #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+      }
+    </style>
+    <div id="html">
+      <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose">
+          <div class="camber"></div>
+        </div>
+        <div class="cheek left"></div>
+        <div class="cheek right"></div>
+        <div class="mouth">
+          <div class="up">
+            <div class="lip left"></div>
+            <div class="lip right"></div>
+          </div>
+          <div class="down">
+            <div class="circle">
+              <div class="tongue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="test.69bc7669.js"></script>
+  </body>
+</html>
